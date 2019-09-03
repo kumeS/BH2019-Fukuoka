@@ -28,7 +28,16 @@ OS / Software
 <img src="img/ClassRelation.png" >
 
 ## Process for image segmentaiton
-1. Pre-processing
-    1. A
-    2. B
+1. Image dataset
+    1. Mouse B6J kidney electron microscopy images
+    2. Croped images around 1000 x 1000 px
+2. Pre-processing
+    1. resize for images, 128 px, 256 px, 512 px squares (We do not know which the better)
+    2. normalize
+    3. clahe (Contrast Limited Adaptive Histogram Equalization)
+    4. Gamma Correct (this is not so important)
+    5. Image amplification
+    	1. rotate 0, 90, 180, 270
+    	2. Horizontal translation, 1/8-7/8 tick
+    	3. Vertical translation, 1/8-7/8 tick
 
