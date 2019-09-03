@@ -29,7 +29,7 @@ OS / Software
 
 ## Process for image segmentaiton
 1. Image dataset
-    1. Mouse B6J kidney electron microscopy images
+    1. [Mouse B6J kidney electron microscopy images](https://github.com/kumeS/BH2019-Fukuoka/tree/master/01_ImageDataset/01_Mouse_B6J_Kidney_Nucleus_All_ver190903)
     2. Croped images around 1000 x 1000 px
 2. Pre-processing
     1. resize for images, 128 px, 256 px, 512 px squares (We do not know which the better)
