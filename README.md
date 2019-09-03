@@ -41,3 +41,5 @@ OS / Software
     	2. Horizontal translation, 1/8-7/8 tick
     	3. Vertical translation, 1/8-7/8 tick
 
+
+find ~/Desktop/sk_GitHub/BH2019-Fukuoka -name ".DS_Store" -print&nbsp; -exec rm {} ";"
