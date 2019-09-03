@@ -40,7 +40,7 @@ OS / Software
     3. clahe (Contrast Limited Adaptive Histogram Equalization)
     4. Gamma Correct (this is not so important)
     5. Image amplification
-    	1. rotate 0, 90, 180, 270
+    	1. rotate 0, 90, 180, 270 degree
     	2. Horizontal translation, 1/8-7/8 tick
     	3. Vertical translation, 1/8-7/8 tick
 
