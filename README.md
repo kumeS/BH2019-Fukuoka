@@ -23,3 +23,12 @@ OS / Software
 - NVIDIA Driver : 418.67 / gcc : 4.8.5
 - CUDA : V9.0.176
 - Rstudio (R version 3.6.0), R-Keras 2.2.4, TensorFlow 1.11.0 (Backend)
+
+## Metadata Concept
+<img src="img/ClassRelation.png" >
+
+## Process for image segmentaiton
+1. Pre-processing
+    1. 
+    2. 
+
