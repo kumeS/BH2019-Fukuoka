@@ -5,8 +5,11 @@
 ## Metadata annotation for image data using machine learning 
 Member : 
 
-## Description
-One of research projects in Biohackathon 2019.
+Description : <br/>
+- To discuss the metadata description (phenotypes/morphology) for ROI &/or masked region.
+- To try the development of the supporting system of metadata annotation for the insight view of images using the machine learning.
+-  To consider an effective  amplification of training data from a few dataset.
+
 
 ## Computation environment
 Machine
