@@ -32,8 +32,8 @@ OS / Software
     1. Mouse B6J kidney electron microscopy images
     	1. [Nucleus](https://github.com/kumeS/BH2019-Fukuoka/tree/master/01_ImageDataset/01_Mouse_B6J_Kidney_Nucleus_All_ver190903)
     	2. Mitochondria
-    2. Croped images around 1000 x 1000 px
-    <br/><img src="img/GT01.png" > <br/>
+    2. Croped images around 1000 x 1000 px<br/>
+<img src="img/GT01.png" > <br/>
 2. Pre-processing
     1. resize for images, 128 px, 256 px, 512 px squares (We do not know which the better)
     2. normalize
