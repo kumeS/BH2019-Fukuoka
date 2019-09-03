@@ -29,6 +29,6 @@ OS / Software
 
 ## Process for image segmentaiton
 1. Pre-processing
-    1. 
-    2. 
+    1. A
+    2. B
 
