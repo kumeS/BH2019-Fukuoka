@@ -29,7 +29,7 @@ OS / Software
 
 ## Process for image segmentaiton
 1. Image dataset
-    1. [Mouse B6J kidney electron microscopy images] 
+    1. Mouse B6J kidney electron microscopy images
     	1. [Nucleus](https://github.com/kumeS/BH2019-Fukuoka/tree/master/01_ImageDataset/01_Mouse_B6J_Kidney_Nucleus_All_ver190903)
     	2. Mitochondria
     	<br/><img src="img/GT01.png" > <br/>
