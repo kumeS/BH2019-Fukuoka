@@ -35,15 +35,15 @@ OS / Software
     2. Croped images around 1000 x 1000 px<br/>
 <img src="img/GT01.png" > <br/>
 2. Pre-processing
-    1. resize for images, 128 px, 256 px, 512 px squares (We do not know which the better)
-    2. normalize
-    3. clahe (Contrast Limited Adaptive Histogram Equalization)
+    1. Resize for images: 128 px, 256 px, 512 px squares (We do not know which the better)
+    2. Normalization
+    3. Clahe (Contrast Limited Adaptive Histogram Equalization)
     4. Gamma Correct (this is not so important)
     5. Image amplification
-    	1. rotate 0, 90, 180, 270 degree
-    	2. Horizontal translation, 1/8-7/8 tick
-    	3. Vertical translation, 1/8-7/8 tick
-    6. randomSequence of images (I is still not sure)
+    	1. Rotation: 0, 90, 180, 270 degree
+    	2. Horizontal translation: 1/8-7/8 tick
+    	3. Vertical translation: 1/8-7/8 tick
+    6. RandomSequence of images (I is still not sure)
     7. list2tensor
 3. Deep learning model 
 
