@@ -3,7 +3,7 @@
 </h1>
 
 ## Metadata annotation for image data using machine learning 
-Member : 
+Member : Satoshi Kume, Norio Kobayashi, Hiroshi Masuya
 
 Description : <br/>
 - To discuss the metadata description (phenotypes/morphology) for ROI &/or masked region.
