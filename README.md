@@ -43,6 +43,9 @@ OS / Software
     	1. rotate 0, 90, 180, 270 degree
     	2. Horizontal translation, 1/8-7/8 tick
     	3. Vertical translation, 1/8-7/8 tick
+    6. randomSequence of images (I is still not sure)
+    7. list2tensor
+3. Deep learning model 
 
 
 
