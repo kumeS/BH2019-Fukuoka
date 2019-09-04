@@ -39,13 +39,18 @@ OS / Software
     2. Normalization
     3. Clahe (Contrast Limited Adaptive Histogram Equalization)
     4. Gamma Correct (this is not so important)
-    5. Image amplification
-    	1. Rotation: 0, 90, 180, 270 degree
-    	2. Horizontal translation: 1/8-7/8 tick
-    	3. Vertical translation: 1/8-7/8 tick
+    5. Training image amplification --- 113-folds
+    	1. Rotation : 0, 90, 180, 270 degree
+    	2. Flip : Y/N
+    	3. Horizontal translation : 1/8-7/8 tick
+    	4. Vertical translation : 1/8-7/8 tick
     6. RandomSequence of images (I is still not sure)
     7. list2tensor
 3. Deep learning model 
-
+	1.  Evaluation metrics
+		1. IoU (Intersection-Over-Union)
+		2. Dise coefficient (F1 score)<br/>
+		[metrics in detail](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
+		 
 
 
