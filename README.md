@@ -69,6 +69,7 @@ OS / Software
 		return(result)}
 		```
 		[metrics in detail](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
-?. Particle shape
+4. Calculation
+5. Particle shape
 	1. [BioVoxxel/ImageJ](https://imagej.net/BioVoxxel_Toolbox), others
 
