@@ -49,8 +49,18 @@ OS / Software
 3. Deep learning model 
 	1.  Evaluation metrics
 		1. IoU (Intersection-Over-Union)
-		
+		```R
+		iou <- function(y_true, y_pred, smooth = 1.0){
+		y_true_f <- k_flatten(y_true)
+		y_pred_f <- k_flatten(y_pred)
+		intersection <- k_sum( y_true_f * y_pred_f)
+		union <- k_sum( y_true_f + y_pred_f ) - intersection
+		result <- (intersection + smooth) / ( union + smooth)
+		return(result)}
+		```
 		2. Dice Coefficient (F1 score)<br/>
+		```R
+		```
 		[metrics in detail](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
 ?. Particle shape
 	1. [BioVoxxel/ImageJ](https://imagej.net/BioVoxxel_Toolbox), others
