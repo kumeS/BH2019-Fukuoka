@@ -49,7 +49,7 @@ OS / Software
 3. Deep learning model 
 	1.  Evaluation metrics
 		1. IoU (Intersection-Over-Union)
-		2. Dise coefficient (F1 score)<br/>
+		2. Dice Coefficient (F1 score)<br/>
 		[metrics in detail](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
 		 
 
