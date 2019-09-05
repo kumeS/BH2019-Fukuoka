@@ -81,6 +81,7 @@ OS / Software
 	3. Model
 		1. U-NET : [Olaf Ronneberger et al, U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
 	4. Learning rate
+		1. 1st
 		```R
 		lr_schedule <- function(epoch, lr) {
 		if(epoch <= 10) {
@@ -97,7 +98,30 @@ OS / Software
 			0.000001 }}
 		lr_reducer <- callback_learning_rate_scheduler(lr_schedule)
 		```
-	4. Image Dataset
+		2. 2nd
+		```R
+		lr_schedule <- function(epoch, lr) {
+		if(epoch <= 25) {
+		0.001
+		} else if(epoch > 25 && epoch <= 50){
+		0.0001
+		} else if(epoch > 50 && epoch <= 75){
+		0.00001
+		} else {
+		0.00001 }}
+		```
+	5. Turning parameters
+		```R
+		FLAGS <- flags(
+		flag_numeric("kernel_size", 3),
+		flag_numeric("nlevels", 3),
+		flag_numeric("nfilters", 128),
+		flag_numeric("BatchSize", 4),
+		flag_numeric("dropout1", 0.1),
+		flag_numeric("dropout2", 0.1),
+		flag_numeric("dropout3", 0.1))
+		```
+	5. Image Dataset
 		1. Training images : 44 images
 		2. Cheching images during training : 5 images
 4. Calculation
