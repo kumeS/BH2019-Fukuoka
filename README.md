@@ -35,7 +35,7 @@ OS / Software
     2. Croped images around 1000 x 1000 px<br/>
 <img src="img/GT01.png" > <br/>
 2. Pre-processing
-    1. Resize for images: 512 x 512 px /  1024 x 1024 px 
+    1. Resize for images: 512 - 1024 px square
     2. Normalization
     3. Clahe (Contrast Limited Adaptive Histogram Equalization)
     4. Gamma Correct (this is not so important)
@@ -78,8 +78,28 @@ OS / Software
 		return(result)}
 		```
 		[metrics in detail](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
-		3. Model
-			1. U-NET : [Olaf Ronneberger et al, U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
+	3. Model
+		1. U-NET : [Olaf Ronneberger et al, U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
+	4. Learning rate
+		```R
+		lr_schedule <- function(epoch, lr) {
+		if(epoch <= 10) {
+ 			0.01
+		} else if(epoch > 10 && epoch <= 50){
+ 			0.001
+		} else if(epoch > 50 && epoch <= 75){
+ 			0.0001
+		} else if(epoch > 75 && epoch <= 100){
+  			0.00001
+		} else if(epoch > 100 && epoch <= 200){
+ 			0.000001
+		} else {
+			0.000001 }}
+		lr_reducer <- callback_learning_rate_scheduler(lr_schedule)
+		```
+	4. Image Dataset
+		1. Training images : 44 images
+		2. Cheching images during training : 5 images
 4. Calculation
 	1. Result 1 : Failed
 	2. Result 2
@@ -89,11 +109,12 @@ OS / Software
 		2. [Microscopy Image Browser: A Platform for Segmentation and Analysis of Multidimensional Datasets](https://journals.plos.org/plosbiology/article/figure?id=10.1371/journal.pbio.1002340.g001)
 		3. [Microscopy Image Browser Watershed/Graphcut segmentation](http://mib.helsinki.fi/help/main2/ug_gui_menu_tools_watershed.html)
 6. Particle shape
-	1. [BioVoxxel/ImageJ](https://imagej.net/BioVoxxel_Toolbox) <br/>
+	1. ideas from 
+		1. [BioVoxxel/ImageJ](https://imagej.net/BioVoxxel_Toolbox) <br/>
 		<img src="https://imagej.net/_images/2/27/ExtendedParticleAnalyzer_v2.png"  width="50%"  /><br/>
-	2. [Rounding & sphericity ES.svg](https://commons.wikimedia.org/wiki/File:Rounding_%26_sphericity_ES.svg)<br/>
-	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Rounding_%26_sphericity_ES.svg"  width="50%"  /><br/>
-	3. [2D particle shape analysis](https://forum.image.sc/t/2d-particle-shape-analysis/6920)<br/>
+		2. [Rounding & sphericity ES.svg](https://commons.wikimedia.org/wiki/File:Rounding_%26_sphericity_ES.svg)<br/>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Rounding_%26_sphericity_ES.svg"  width="50%"  /><br/>
+		3. [2D particle shape analysis](https://forum.image.sc/t/2d-particle-shape-analysis/6920)<br/>
 		<img src="https://aws1.discourse-cdn.com/business4/uploads/imagej/original/2X/8/878324f51ec463b060640173b7861e921fce7da4.jpg"  width="50%"  /><br/>
 	
 		
