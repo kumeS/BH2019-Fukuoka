@@ -89,6 +89,12 @@ OS / Software
 		2. [Microscopy Image Browser: A Platform for Segmentation and Analysis of Multidimensional Datasets](https://journals.plos.org/plosbiology/article/figure?id=10.1371/journal.pbio.1002340.g001)
 		3. [Microscopy Image Browser Watershed/Graphcut segmentation](http://mib.helsinki.fi/help/main2/ug_gui_menu_tools_watershed.html)
 6. Particle shape
-	1. [BioVoxxel/ImageJ](https://imagej.net/BioVoxxel_Toolbox), others<br/>
+	1. [BioVoxxel/ImageJ](https://imagej.net/BioVoxxel_Toolbox) <br/>
 		<img src="https://imagej.net/_images/2/27/ExtendedParticleAnalyzer_v2.png"  width="50%"  /><br/>
+	2. [Rounding & sphericity ES.svg](https://commons.wikimedia.org/wiki/File:Rounding_%26_sphericity_ES.svg)
+	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Rounding_%26_sphericity_ES.svg"  width="50%"  /><br/>
+	
+	3. [2D particle shape analysis](https://forum.image.sc/t/2d-particle-shape-analysis/6920)
+		<img src="https://aws1.discourse-cdn.com/business4/uploads/imagej/original/2X/8/878324f51ec463b060640173b7861e921fce7da4.jpg"  width="50%"  /><br/>
+	
 		
