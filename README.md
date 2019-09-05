@@ -35,17 +35,22 @@ OS / Software
     2. Croped images around 1000 x 1000 px<br/>
 <img src="img/GT01.png" > <br/>
 2. Pre-processing
-    1. Resize for images: 128 px, 256 px, 512 px squares (We do not know which the better)
+    1. Resize for images: 512 x 512 px
     2. Normalization
     3. Clahe (Contrast Limited Adaptive Histogram Equalization)
     4. Gamma Correct (this is not so important)
-    5. Training image amplification --- 113-folds
+    5. Training image amplification : This step is skipped in BH19.
     	1. Rotation : 0, 90, 180, 270 degree
     	2. Flip : Y/N
     	3. Horizontal translation : 1/8-7/8 tick
     	4. Vertical translation : 1/8-7/8 tick
     6. RandomSequence of images (I is still not sure)
     7. list2tensor
+		```R 
+		list2tensor <- function(xList) {
+		xTensor <- simplify2array(xList)
+		aperm(xTensor, c(4, 1, 2, 3)) }
+		```  
 3. Deep learning model 
 	1.  Evaluation metrics
 		1. IoU (Intersection-Over-Union)
