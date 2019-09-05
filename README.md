@@ -126,14 +126,14 @@ OS / Software
 4. Calculation
 	1. Result 1 : Failed
 	2. Result 2 
-		1. run 01<br/>
-		<img src="03_RUN/run01.png"  width="50%"  /><br/>
-		2. run 02<br/>
-		<img src="03_RUN/run02.png"  width="50%"  /><br/>
-		3. run 03<br/>
-		<img src="03_RUN/run03.png"  width="50%"  /><br/>	
-		4. run 04<br/>
-		<img src="03_RUN/run04.png"  width="50%"  /><br/>	
+		1. run 01 <br/>
+		<img src="03_RUN/run01.png"  width="50%" /> <br/>
+		2. run 02 <br/>
+		<img src="03_RUN/run02.png"  width="50%" /> <br/>
+		3. run 03 <br/>
+		<img src="03_RUN/run03.png"  width="50%" /> <br/>	
+		4. run 04 <br/>
+		<img src="03_RUN/run04.png"  width="50%" /> <br/>	
 5. Evaluation and modification cycle of results
 	1. ideas from
 		1. [Morphological Snakes GitHub : Morphological snakes for image segmentation and tracking](https://github.com/pmneila/morphsnakes)
