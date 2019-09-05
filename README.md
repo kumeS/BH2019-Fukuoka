@@ -35,11 +35,11 @@ OS / Software
     2. Croped images around 1000 x 1000 px<br/>
 <img src="img/GT01.png" > <br/>
 2. Pre-processing
-    1. Resize for images: 512 x 512 px
+    1. Resize for images: 512 x 512 px /  1024 x 1024 px 
     2. Normalization
     3. Clahe (Contrast Limited Adaptive Histogram Equalization)
     4. Gamma Correct (this is not so important)
-    5. Training image amplification : This step is skipped in BH19.
+    5. Training image amplification : This step was skipped in BH19 due to time consuming.
     	1. Rotation : 0, 90, 180, 270 degree
     	2. Flip : Y/N
     	3. Horizontal translation : 1/8-7/8 tick
@@ -74,7 +74,16 @@ OS / Software
 		return(result)}
 		```
 		[metrics in detail](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
+		3. Model
+			1. U-NET : [Olaf Ronneberger et al, U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
 4. Calculation
-5. Particle shape
+	1. Result 1 : Failed
+	2. Result 2
+5. Evaluation and modification cycle of results
+	1. ideas from 
+		1. [Morphological Snakes GitHub : Morphological snakes for image segmentation and tracking](https://github.com/pmneila/morphsnakes)
+		2. [Microscopy Image Browser: A Platform for Segmentation and Analysis of Multidimensional Datasets](https://journals.plos.org/plosbiology/article/figure?id=10.1371/journal.pbio.1002340.g001)
+		3. [Microscopy Image Browser Watershed/Graphcut segmentation](http://mib.helsinki.fi/help/main2/ug_gui_menu_tools_watershed.html)
+6. Particle shape
 	1. [BioVoxxel/ImageJ](https://imagej.net/BioVoxxel_Toolbox), others
 
