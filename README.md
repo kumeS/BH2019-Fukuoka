@@ -134,6 +134,12 @@ OS / Software
 		<img src="04_RUN/run03.png"  width="50%" /> <br/>	
 		4. run 04 <br/>
 		<img src="04_RUN/run04.png"  width="50%" /> <br/>	
+	3. Evaluation of Result 2
+		1. Ex. Good <br/>
+		<img src="05_Results/01_Train_Results/0036_01_Train_Res.png"  width="50%" /> <br/>
+		2. Ex. Bad <br/>
+		<img src="05_Results/01_Train_Results/0011_02_Train_Res_ov.png"  width="50%" /> <br/>
+
 5. Evaluation and modification cycle of results
 	1. ideas from
 		1. [Morphological Snakes GitHub : Morphological snakes for image segmentation and tracking](https://github.com/pmneila/morphsnakes)
