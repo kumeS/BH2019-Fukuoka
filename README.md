@@ -44,7 +44,11 @@ OS / Software
     	2. Flip : Y/N
     	3. Horizontal translation : 1/8-7/8 tick
     	4. Vertical translation : 1/8-7/8 tick
-    6. RandomSequence of images (I is still not sure)
+    6. RandomSequence of images
+		```R 
+		library(random)
+		Ran <- c(random::randomSequence(min=1, max=length(XYG$X), col=1))
+		```
     7. list2tensor
 		```R 
 		list2tensor <- function(xList) {
@@ -85,5 +89,6 @@ OS / Software
 		2. [Microscopy Image Browser: A Platform for Segmentation and Analysis of Multidimensional Datasets](https://journals.plos.org/plosbiology/article/figure?id=10.1371/journal.pbio.1002340.g001)
 		3. [Microscopy Image Browser Watershed/Graphcut segmentation](http://mib.helsinki.fi/help/main2/ug_gui_menu_tools_watershed.html)
 6. Particle shape
-	1. [BioVoxxel/ImageJ](https://imagej.net/BioVoxxel_Toolbox), others
-
+	1. [BioVoxxel/ImageJ](https://imagej.net/BioVoxxel_Toolbox), others<br/>
+		<img src="https://imagej.net/File:ExtendedParticleAnalyzer_v2.png" > <br/>
+		
