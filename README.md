@@ -11,7 +11,7 @@ Description : <br/>
 -  To consider an effective  amplification of training data from a few dataset.
 
 ## Metadata Concept
-<img src="img/ClassRelation.png" >
+<img src="01_MedadataDescription/ClassRelation.png" >
 
 ## Computation environment
 Machine
