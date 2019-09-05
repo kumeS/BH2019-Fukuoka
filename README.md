@@ -10,6 +10,8 @@ Description : <br/>
 - To try the development of the supporting system of metadata annotation for the insight view of images using the machine learning.
 -  To consider an effective  amplification of training data from a few dataset.
 
+## Metadata Concept
+<img src="img/ClassRelation.png" >
 
 ## Computation environment
 Machine
@@ -23,9 +25,6 @@ OS / Software
 - NVIDIA Driver : 418.67 / gcc : 4.8.5
 - CUDA : V9.0.176
 - Rstudio (R version 3.6.0), R-Keras 2.2.4, R-TensorFlow 1.11.0 (Backend)
-
-## Metadata Concept
-<img src="img/ClassRelation.png" >
 
 ## Process for image segmentaiton
 1. Image dataset
