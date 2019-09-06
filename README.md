@@ -56,7 +56,10 @@ OS / Software
 		aperm(xTensor, c(4, 1, 2, 3)) }
 		```  
 3. Deep learning model 
-	1.  Evaluation metrics
+	1. Model
+		1. U-NET : [Olaf Ronneberger et al, U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
+		2. [The modified model in this project](https://github.com/kumeS/BH2019-Fukuoka/blob/master/03_DL_model/UNET_modified_model.pdf)
+	2.  Evaluation metrics
 		1. IoU (Intersection-Over-Union)
 		```R
 		iou <- function(y_true, y_pred, smooth = 1.0){
@@ -78,12 +81,20 @@ OS / Software
 		return(result)}
 		```
 		[metrics in detail](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
-	3. Model
-		1. U-NET : [Olaf Ronneberger et al, U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
-		2. [The modified model in this project](https://github.com/kumeS/BH2019-Fukuoka/blob/master/03_DL_model/UNET_modified_model.pdf)
-		
-	4. Learning rate
-		1. 1st
+
+	3. Prameter tuning
+		```R
+		FLAGS <- flags(
+		flag_numeric("kernel_size", 3),
+		flag_numeric("nlevels", 3),
+		flag_numeric("nfilters", 128),
+		flag_numeric("BatchSize", 4),
+		flag_numeric("dropout1", 0.1),
+		flag_numeric("dropout2", 0.1),
+		flag_numeric("dropout3", 0.1))
+		```
+		1. Prameter tuning - Learning rate
+			1. 1st
 		```R
 		lr_schedule <- function(epoch, lr) {
 		if(epoch <= 10) {
@@ -100,7 +111,7 @@ OS / Software
 			0.000001 }}
 		lr_reducer <- callback_learning_rate_scheduler(lr_schedule)
 		```
-		2. 2nd
+			2. 2nd
 		```R
 		lr_schedule <- function(epoch, lr) {
 		if(epoch <= 25) {
@@ -112,21 +123,11 @@ OS / Software
 		} else {
 		0.00001 }}
 		```
-	5. Turning parameters
-		```R
-		FLAGS <- flags(
-		flag_numeric("kernel_size", 3),
-		flag_numeric("nlevels", 3),
-		flag_numeric("nfilters", 128),
-		flag_numeric("BatchSize", 4),
-		flag_numeric("dropout1", 0.1),
-		flag_numeric("dropout2", 0.1),
-		flag_numeric("dropout3", 0.1))
-		```
-	5. Image Dataset
+
+4. Image Dataset
 		1. Training images : 44 images
 		2. Cheching images during training : 5 images
-4. Calculation
+5. Calculation
 	1. Result 1 : Failed
 	2. Result 2 
 		1. run 01 <br/>
@@ -144,12 +145,12 @@ OS / Software
 		<img src="05_Results/01_Train_Results/0011_01_Train_Res.png"  width="50%" /> <br/>
 	4.  Evaluation of test result
 		
-5. Evaluation and modification cycle of results
+6. Evaluation and modification cycle of results
 	1. ideas from
 		1. [Morphological Snakes GitHub : Morphological snakes for image segmentation and tracking](https://github.com/pmneila/morphsnakes)
 		2. [Microscopy Image Browser: A Platform for Segmentation and Analysis of Multidimensional Datasets](https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1002340&type=printable)
 		3. [Microscopy Image Browser Watershed/Graphcut segmentation](http://mib.helsinki.fi/help/main2/ug_gui_menu_tools_watershed.html)
-6. Particle shape
+7. Particle shape
 	1. ideas from 
 		1. [BioVoxxel/ImageJ](https://imagej.net/BioVoxxel_Toolbox) <br/>
 		<img src="https://imagej.net/_images/2/27/ExtendedParticleAnalyzer_v2.png"  width="50%"  /><br/>
