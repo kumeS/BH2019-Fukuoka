@@ -114,7 +114,7 @@ OS / Software
 			0.000001 }}
 		lr_reducer <- callback_learning_rate_scheduler(lr_schedule)
 		```
-				2. 2nd
+			2. 2nd
 		```R
 		lr_schedule <- function(epoch, lr) {
 		if(epoch <= 25) {
@@ -126,8 +126,8 @@ OS / Software
 		} else {
 		0.00001 }}
 		```
-				3. 3rd
-				4. 4th
+			3. 3rd
+			4. 4th
 4. Image Dataset
 		1. Training images : 44 images
 		2. Cheching images during training : 5 images
