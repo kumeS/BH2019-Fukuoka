@@ -12,9 +12,9 @@ Description : <br/>
 
 ## Metadata Concept
 <img src="01_MedadataDescription/ClassRelation1.png" ><br/>
-<img src="01_MedadataDescription/Object-shape.png" ><br/>
+<img src="01_MedadataDescription/Object-shape.png" width="50%" ><br/>
 
-### Use case
+## Use case
 <img src="01_MedadataDescription/ClassRelation2.png" >
 
 ## Computation environment
