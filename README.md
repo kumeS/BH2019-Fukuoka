@@ -79,8 +79,7 @@ OS / Software
 		[metrics in detail](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
 	3. Model
 		1. U-NET : [Olaf Ronneberger et al, U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
-		2. The modified model<br/>
-		<img src="03_DL_model/UNET_modified_model.pdf"  width="50%" /> <br/>
+		2. [The modified model in this project](https://github.com/kumeS/BH2019-Fukuoka/blob/master/03_DL_model/UNET_modified_model.pdf)
 		
 	4. Learning rate
 		1. 1st
