@@ -135,15 +135,16 @@ OS / Software
 		4. run 04 <br/>
 		<img src="04_RUN/run04.png"  width="50%" /> <br/>	
 	3. Evaluation of training result 2
-		1. Ex. Good <br/>
+		1. Good result<br/>
 		<img src="05_Results/01_Train_Results/0036_01_Train_Res.png"  width="50%" /> <br/>
-		2. Ex. Bad <br/>
+		2. Bad result<br/>
 		<img src="05_Results/01_Train_Results/0011_01_Train_Res.png"  width="50%" /> <br/>
-
+	4.  Evaluation of test result
+		
 5. Evaluation and modification cycle of results
 	1. ideas from
 		1. [Morphological Snakes GitHub : Morphological snakes for image segmentation and tracking](https://github.com/pmneila/morphsnakes)
-		2. [Microscopy Image Browser: A Platform for Segmentation and Analysis of Multidimensional Datasets](https://journals.plos.org/plosbiology/article/figure?id=10.1371/journal.pbio.1002340.g001)
+		2. [Microscopy Image Browser: A Platform for Segmentation and Analysis of Multidimensional Datasets](https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1002340&type=printable)
 		3. [Microscopy Image Browser Watershed/Graphcut segmentation](http://mib.helsinki.fi/help/main2/ug_gui_menu_tools_watershed.html)
 6. Particle shape
 	1. ideas from 
