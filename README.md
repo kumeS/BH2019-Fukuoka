@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="img/bh19-logo.png" ><br/>  
+  <img src="img/bh19-logo.png" ><br/> 
 </h1>
 
 ## Metadata annotation for image data using machine learning 
@@ -96,8 +96,8 @@ OS / Software
 		flag_numeric("dropout2", 0.1),
 		flag_numeric("dropout3", 0.1))
 		```
-		1. Prameter tuning - Learning rate
-			1. 1st
+	1. Prameter tuning - Learning rate
+		1. 1st
 		```R
 		lr_schedule <- function(epoch, lr) {
 		if(epoch <= 10) {
